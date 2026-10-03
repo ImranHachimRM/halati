@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Halati — Assistance &amp; Confidentialité / Support &amp; Privacy</title>
+<meta name="description" content="Halati : versets du Coran et azkar. Assistance et politique de confidentialité / Quran verses and azkar. Support and privacy policy.">
+<style>
+  :root { --bg:#fafaf7; --fg:#1d1d1f; --muted:#5f6368; --accent:#b8860b; --card:#ffffff; --line:#e6e3da; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0f1117; --fg:#ececec; --muted:#9aa0a6; --accent:#d4a73a; --card:#181b24; --line:#2a2e3a; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header { text-align:center; padding:24px 0 8px; }
+  header h1 { margin:0; font-size:2.2rem; letter-spacing:.02em; }
+  header p { margin:6px 0 0; color:var(--muted); }
+  .arabic { font-size:1.6rem; color:var(--accent); margin:4px 0 0; }
+  .lang { display:flex; gap:8px; justify-content:center; margin:20px 0 8px; }
+  .lang button { background:var(--card); color:var(--fg); border:1px solid var(--line); border-radius:999px; padding:6px 18px; font:inherit; font-size:.95rem; cursor:pointer; }
+  .lang button[aria-pressed="true"] { background:var(--accent); border-color:var(--accent); color:#111; font-weight:600; }
+  section.lang-block { margin-top:24px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px 22px; margin-top:18px; }
+  h2 { margin:0 0 8px; font-size:1.35rem; }
+  h3 { margin:20px 0 4px; font-size:1.05rem; }
+  p { margin:8px 0; }
+  ul { margin:8px 0; padding-left:22px; }
+  a { color:var(--accent); }
+  .muted { color:var(--muted); font-size:.92rem; }
+  footer { text-align:center; margin-top:40px; color:var(--muted); font-size:.9rem; }
+  [hidden] { display:none !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Halati</h1>
+  <p class="arabic" lang="ar" dir="rtl">حالتي</p>
+  <p>Versets &amp; Azkar &middot; Verses &amp; Azkar</p>
+</header>
+
+<div class="lang" role="group" aria-label="Language">
+  <button type="button" data-lang="fr" aria-pressed="true">Français</button>
+  <button type="button" data-lang="en" aria-pressed="false">English</button>
+</div>
+
+<!-- ============================ FRANÇAIS ============================ -->
+<section class="lang-block" data-block="fr" lang="fr">
+
+  <div class="card" id="support">
+    <h2>Assistance</h2>
+    <p>Halati est une app qui propose des versets du Coran classés par situation de vie, ainsi que les azkar du matin et du soir, avec des widgets et des rappels.</p>
+    <p>Une question, un bug, une suggestion ou une correction de texte ? Écris-moi :</p>
+    <p><a href="mailto:haris.zorgati@icloud.com">haris.zorgati@icloud.com</a></p>
+    <p class="muted">Je réponds en général sous quelques jours. Pour m'aider à résoudre un problème, indique le modèle de ton iPhone ou iPad, la version d'iOS et une courte description de ce qui s'est passé.</p>
+
+    <h3>Questions fréquentes</h3>
+    <p><strong>Comment ajouter le widget ?</strong><br>
+    Appuie longuement sur l'écran d'accueil, appuie sur « + » en haut, puis cherche « Halati ». Pour l'écran verrouillé : appui long, « Personnaliser », puis la zone de widgets. Le détail est aussi dans Réglages &gt; Ajouter le widget.</p>
+    <p><strong>Les rappels d'azkar ne s'affichent pas.</strong><br>
+    Vérifie dans Réglages que « Notifications Azkar » est activé et qu'une ville est choisie (ou que « Utiliser ma position » est activé et autorisé dans les Réglages d'iOS). Vérifie aussi que les notifications sont autorisées pour Halati dans Réglages iOS &gt; Notifications.</p>
+    <p><strong>Comment changer la langue ou la police arabe ?</strong><br>
+    Dans l'onglet Réglages de l'app : « Langue de l'app » et « Police arabe ».</p>
+  </div>
+
+  <div class="card" id="privacy">
+    <h2>Politique de confidentialité</h2>
+    <p class="muted">Dernière mise à jour : 3 octobre 2026</p>
+    <p>Halati est conçue pour respecter ta vie privée : <strong>pas de compte, pas de publicité, pas de suivi, et aucune vente de données.</strong></p>
+
+    <h3>Ce qui reste sur ton appareil</h3>
+    <p>Tes favoris (versets et azkar) et tes réglages (langue, police, apparence, ville choisie) sont enregistrés uniquement sur ton appareil. Nous n'y avons pas accès.</p>
+
+    <h3>Localisation (facultative)</h3>
+    <p>Si tu choisis « Utiliser ma position », l'app lit ta position uniquement lorsqu'elle est ouverte, pour calculer les horaires de Fajr et d'Asr et programmer tes rappels d'azkar. Ce calcul est fait sur ton appareil : ta position n'est ni envoyée à nos serveurs ni conservée. Tu peux aussi choisir une ville manuellement, sans donner ta position, et retirer l'autorisation à tout moment dans Réglages iOS.</p>
+
+    <h3>Services Firebase (Google)</h3>
+    <p>L'app utilise Firebase pour deux choses :</p>
+    <ul>
+      <li><strong>Contenu :</strong> Cloud Firestore permet de télécharger les textes à jour (versets, azkar, traductions). Aucune donnée personnelle n'est envoyée dans ce cadre, mais comme pour toute requête internet, Google peut recevoir ton adresse IP.</li>
+      <li><strong>Notifications :</strong> Firebase Cloud Messaging permet de t'envoyer des notifications si tu les autorises. Pour cela, un identifiant technique anonyme de ton appareil (jeton de notification) est enregistré auprès de Firebase. Il n'est pas relié à ton identité.</li>
+    </ul>
+    <p>Ces services sont fournis par Google et soumis à leur propre politique de confidentialité : <a href="https://firebase.google.com/support/privacy" rel="noopener">firebase.google.com/support/privacy</a>.</p>
+
+    <h3>Ce que nous ne faisons pas</h3>
+    <ul>
+      <li>Aucun compte ni donnée d'identité (nom, e-mail, etc.) n'est demandé dans l'app.</li>
+      <li>Aucun outil de publicité ou de statistiques d'usage tiers.</li>
+      <li>Aucune donnée vendue ni partagée à des fins commerciales.</li>
+    </ul>
+
+    <h3>Enfants</h3>
+    <p>L'app ne collecte sciemment aucune donnée personnelle, y compris auprès des enfants.</p>
+
+    <h3>Tes droits et contact</h3>
+    <p>Pour toute question sur cette politique ou pour demander la suppression des données de notification associées à ton appareil, écris à <a href="mailto:haris.zorgati@icloud.com">haris.zorgati@icloud.com</a>. Supprimer l'app supprime toutes les données stockées sur ton appareil.</p>
+
+    <h3>Modifications</h3>
+    <p>Cette politique peut évoluer ; la date de dernière mise à jour est indiquée en haut de cette section.</p>
+  </div>
+</section>
+
+<!-- ============================ ENGLISH ============================ -->
+<section class="lang-block" data-block="en" lang="en" hidden>
+
+  <div class="card" id="support-en">
+    <h2>Support</h2>
+    <p>Halati offers Quran verses organized by life situation, plus morning and evening azkar, with widgets and reminders.</p>
+    <p>A question, a bug, a suggestion or a text correction? Get in touch:</p>
+    <p><a href="mailto:haris.zorgati@icloud.com">haris.zorgati@icloud.com</a></p>
+    <p class="muted">I usually reply within a few days. To help me fix a problem, please include your iPhone or iPad model, your iOS version and a short description of what happened.</p>
+
+    <h3>Frequently asked questions</h3>
+    <p><strong>How do I add the widget?</strong><br>
+    Long-press the Home Screen, tap "+" at the top, then search for "Halati". For the Lock Screen: long-press, tap "Customize", then the widget area. The steps are also in Settings &gt; Add the Widget.</p>
+    <p><strong>Azkar reminders are not showing up.</strong><br>
+    Check in Settings that "Azkar Notifications" is on and that a city is chosen (or that "Use my location" is on and allowed in iOS Settings). Also make sure notifications are allowed for Halati in iOS Settings &gt; Notifications.</p>
+    <p><strong>How do I change the language or the Arabic font?</strong><br>
+    In the app's Settings tab: "App Language" and "Arabic Font".</p>
+  </div>
+
+  <div class="card" id="privacy-en">
+    <h2>Privacy Policy</h2>
+    <p class="muted">Last updated: October 3, 2026</p>
+    <p>Halati is built to respect your privacy: <strong>no account, no ads, no tracking, and no sale of data.</strong></p>
+
+    <h3>What stays on your device</h3>
+    <p>Your favorites (verses and azkar) and your settings (language, font, appearance, chosen city) are stored only on your device. We have no access to them.</p>
+
+    <h3>Location (optional)</h3>
+    <p>If you choose "Use my location", the app reads your location only while it is open, to calculate Fajr and Asr times and schedule your azkar reminders. This calculation happens on your device: your location is neither sent to our servers nor stored. You can also pick a city manually without sharing your location, and revoke the permission at any time in iOS Settings.</p>
+
+    <h3>Firebase services (Google)</h3>
+    <p>The app uses Firebase for two things:</p>
+    <ul>
+      <li><strong>Content:</strong> Cloud Firestore downloads up-to-date texts (verses, azkar, translations). No personal data is sent for this, but as with any internet request, Google may receive your IP address.</li>
+      <li><strong>Notifications:</strong> Firebase Cloud Messaging lets us send you notifications if you allow them. For this, an anonymous technical identifier for your device (a notification token) is registered with Firebase. It is not linked to your identity.</li>
+    </ul>
+    <p>These services are provided by Google and subject to their own privacy policy: <a href="https://firebase.google.com/support/privacy" rel="noopener">firebase.google.com/support/privacy</a>.</p>
+
+    <h3>What we do not do</h3>
+    <ul>
+      <li>The app does not ask for any account or identity data (name, email, etc.).</li>
+      <li>No third-party advertising or usage analytics tools.</li>
+      <li>No data is sold or shared for commercial purposes.</li>
+    </ul>
+
+    <h3>Children</h3>
+    <p>The app does not knowingly collect any personal data, including from children.</p>
+
+    <h3>Your rights and contact</h3>
+    <p>For any question about this policy, or to request deletion of the notification data linked to your device, email <a href="mailto:haris.zorgati@icloud.com">haris.zorgati@icloud.com</a>. Deleting the app removes all data stored on your device.</p>
+
+    <h3>Changes</h3>
+    <p>This policy may change; the last-updated date is shown at the top of this section.</p>
+  </div>
+</section>
+
+<footer>&copy; 2026 Halati</footer>
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.lang button');
+    var blocks = document.querySelectorAll('[data-block]');
+    function show(lang) {
+      blocks.forEach(function (b) { b.hidden = b.getAttribute('data-block') !== lang; });
+      buttons.forEach(function (btn) { btn.setAttribute('aria-pressed', String(btn.getAttribute('data-lang') === lang)); });
+      document.documentElement.lang = lang;
+    }
+    buttons.forEach(function (btn) {
+      btn.addEventListener('click', function () { show(btn.getAttribute('data-lang')); });
+    });
+    var wanted = (location.hash.indexOf('-en') > -1) ? 'en'
+      : ((navigator.language || 'fr').toLowerCase().indexOf('fr') === 0 ? 'fr' : 'en');
+    show(wanted);
+    if (location.hash) {
+      var el = document.querySelector(location.hash);
+      if (el) el.scrollIntoView();
+    }
+  })();
+</script>
+</body>
+</html>
